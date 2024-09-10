@@ -1,18 +1,22 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { OnInit } from '@angular/core';
+import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  template: `
-    <h1 class="text-3xl text-center">{{ title }}</h1>
-    <router-outlet></router-outlet>
-  `,
+  imports: [RouterOutlet, NavbarComponent],
+  templateUrl: './app.component.html',
   styles: `
 
   `
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Ng Wallpapers';
+
+  ngOnInit() {
+    initFlowbite();
+  }
 }
