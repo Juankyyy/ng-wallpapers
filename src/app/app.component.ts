@@ -5,8 +5,13 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template: `
+    <h1>{{ title }}</h1>
+    <router-outlet></router-outlet>
+  `,
+  styles: `
+
+  `
 })
 export class AppComponent {
   title = 'ng-wallpapers';
