@@ -6,7 +6,7 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   template: `
-    <h1>{{ title }}</h1>
+    <h1 class="text-3xl text-center">{{ title }}</h1>
     <router-outlet></router-outlet>
   `,
   styles: `
@@ -14,5 +14,5 @@ import { RouterOutlet } from '@angular/router';
   `
 })
 export class AppComponent {
-  title = 'ng-wallpapers';
+  title = 'Ng Wallpapers';
 }
