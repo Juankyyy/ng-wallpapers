@@ -1,8 +1,9 @@
-<section class="bg-white dark:bg-gray-950 flex flex-col justify-around">
+<section class="flex flex-col justify-center">
     <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Ng Wallpapers</h1>
-        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Descubre tus wallpapers favoritos</p>
+        <h1 [ngClass]="textShadow" class="mb-7 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Ng Wallpapers</h1>
+        <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400">Descubre tus próximos wallpapers <span class="font-semibold text-gray-900 underline dark:text-white decoration-sky-500 decoration-wavy">favoritos</span></p>
     </div>
+
     <div class="flex justify-center">
         <svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
             <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:currentColor;stroke-width:20px;"/>
@@ -11,4 +12,4 @@
     </div>
 </section>
 
-<app-wallpapers-section>
+<WallpapersSection />

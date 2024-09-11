@@ -9,9 +9,7 @@ import { initFlowbite } from 'flowbite';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
-  styles: `
-
-  `
+  styles: ``
 })
   export class AppComponent implements OnInit {
   ngOnInit() {

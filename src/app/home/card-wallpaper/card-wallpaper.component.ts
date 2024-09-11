@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-card-wallpaper',
+  selector: 'CardWallpaper',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './card-wallpaper.component.html',
   styleUrl: './card-wallpaper.component.css'
 })
