@@ -13,9 +13,7 @@ import { initFlowbite } from 'flowbite';
 
   `
 })
-export class AppComponent implements OnInit {
-  title = 'Ng Wallpapers';
-
+  export class AppComponent implements OnInit {
   ngOnInit() {
     initFlowbite();
   }
