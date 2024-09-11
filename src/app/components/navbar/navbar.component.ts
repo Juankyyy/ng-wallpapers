@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { NgClass } from '@angular/common';
 import { OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'Navbar',
   standalone: true,
   imports: [],
   templateUrl: "./navbar.component.html",
   styles: ``
 })
 export class NavbarComponent implements OnInit {
+isScrolled: boolean = false;
+
   ngOnInit(): void {
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
     if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
