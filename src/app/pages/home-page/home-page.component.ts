@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { CardWallpaperComponent } from '../../home/card-wallpaper/card-wallpaper.component';
+import { WallpapersSectionComponent } from '../../home/wallpapers-section/wallpapers-section.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
-  imports: [CardWallpaperComponent],
+  imports: [WallpapersSectionComponent],
   templateUrl: './home-page.component.html',
   styles: `
     @keyframes scroll {
