@@ -1,3 +1,7 @@
-<section class="grid justify-items-center mx-8 mt-3 mb-3">
-    <CardWallpaper *ngFor="let i of items" />
-</section>
+@if (wallpaperResults$ | async; as resultObject) {
+    <section class="grid justify-items-center mx-8 mt-3 mb-3">
+        @for (item of resultObject.data; track item.id) {
+            <CardWallpaper [wallpaper]="item"/>
+        }
+    </section>
+}
