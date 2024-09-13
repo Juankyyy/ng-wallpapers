@@ -1,16 +1,15 @@
-import { Component, HostListener } from '@angular/core';
-import { NgClass } from '@angular/common';
+import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'Navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: "./navbar.component.html",
   styles: ``
 })
 export class NavbarComponent implements OnInit {
-isScrolled: boolean = false;
 
   ngOnInit(): void {
     // On page load or when changing themes, best to add inline in `head` to avoid FOUC
