@@ -11,7 +11,7 @@ export class WallpapersService {
   constructor(private http: HttpClient) { }
   
     getWallpapers(): Observable<WallpaperResults> {
-      return this.http.get<WallpaperResults>(`https://mocki.io/v1/2aedde0e-5358-4741-b2b9-7eca56043a70`)
+      return this.http.get<WallpaperResults>(`https://mocki.io/v1/3ad55937-7f86-4438-af47-b6f0b01cef2c`)
       // return this.http.get<WallpaperResults>(`https://wallhaven.cc/api/v1/search`)
     }
 }
